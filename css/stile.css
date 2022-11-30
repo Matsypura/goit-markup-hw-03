@@ -310,7 +310,8 @@ outline: 2px solid tomato;
 min-width: 153px;
   margin-top: 24px;
   margin-bottom: 24px;
-  align-items: center;
+  align-items: baseline;
+
 
 
 }
@@ -319,6 +320,17 @@ min-width: 153px;
 }
 /* #endregion */
 
+/*   main  */
+main{
+  width: 1440px;
+}
+/*hero --h1--*/
+.section{
+  width: 1440px;
+  height: 603px;
+
+}
+
 /* #region hero */
 /* section 1 */
 
@@ -326,26 +338,121 @@ min-width: 153px;
   display: flex;
   flex-wrap: wrap;
   outline: 2px solid tomato;
-  width: 1128px;
+    padding-inline-start: 0%;
+        margin-right: 156px;
+        width: 1440px;
   
 }
 
 .box{
   outline:2px solid tomato;
-  width: 264px;
+  max-width: 264px;
+  
+ 
 }
 .quality-box .box+ .box {
   margin-left: 24px;
 }
+.strategy-box{
+  margin-left: 156px;
+}
 
-  .strategy-box{
-margin-left: 156px;
+
+
+
+  /* section 2 */
+  .content-box{
+    outline: 2px solid tomato;
+  
+  width: 1440px;
+  margin-bottom: 120px;
+ 
+ 
   }
-  .technologies-box{
-    margin-right: 156px;
-  }
+  /* Заголовок 2 section */
+ .content-box .secondary-title {
+margin-left: 559px;
+margin-right: 559px;
+outline: 2px solid tomato;
+
+
+ }
+ /* обводка фото section 2*/
+     .content-item .item{
+     outline: 2px solid tomato;
+     display: flex;
+
+    } 
+    /*   Робота с фото техники */
+    .content-item{
+        align-items: flex-start;
+        width: 100%;
+          padding-inline-start: 0%;
+          display: flex;
+            margin-left: 156px;
+              margin-right: auto;
+    }
+        .content-box .item+.item {
+      margin-left: 24px;
+        }
+/* Панель сотрудников */
+       
+        .team{
+          
+          outline: 2px solid tomato;
+          width: 1440px;
+          height: 732px;
+          padding-inline-start: 0%;
+          
+         
+          
+        }
+        /* заголовок сотрудников*/
+       .team .secondary-title {
+
+       outline: 2px solid tomato;
+       display: inline-block;
+         align-items: center;
+         margin-top: 120px;
+         margin-bottom: 72px;
+         margin-left: 639px;
+         margin-right: 639px; 
+         }
+
+        /* фотографии сотрудников*/
+.team-item{
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: start;
+  display: flex;
+  padding-inline-start: 0%;
+ 
+  margin: 0px auto 120px 156px;
+}
+
+.quality-list{
+  outline: 2px solid tomato;
+
+}
+/* Делаю отступы для  фото сотрудников 
+начиная со второго елемента */
+ .team-item .quality-list+.quality-list {
+   margin-left: 24px;
+ }
+
 
 /* #endregion*/
+
+
+
+/*  Footer */
+.bottom{
+  width: 1440px;
+  margin-right: 0%;
+}
+
+
 
 
 /*#region box--*/
