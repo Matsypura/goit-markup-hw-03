@@ -328,9 +328,34 @@ main{
 .section{
   width: 1440px;
   height: 603px;
+  outline: 2px solid tomato;
 
 }
+/* Title h1 */
+.section-title{
+  display: inline-block;
+  width: 492px;
+  outline: 2px solid tomato;
+  margin: 192px 474px 48px 474px;
 
+}
+/* First Button */
+.hero-button{
+  display: inline-block;
+    width: 170px;
+    outline: 2px solid tomato;
+    margin-bottom:192px;
+    margin-left: 635px;
+    margin-right: 635px; 
+}
+/* div h1*/
+
+      
+
+/* Button h1 */
+.first-button{
+  outline: 2px solid tomato;
+}
 /* #region hero */
 /* section 1 */
 
@@ -448,12 +473,75 @@ outline: 2px solid tomato;
 
 /*  Footer */
 .bottom{
+  display:flex;
   width: 1440px;
-  margin-right: 0%;
+  height: 310px;
+  outline: 2px solid tomato;
+}
+/* logo та text */
+.box-footer{
+  display: inline;
+  width: 264px;
+  margin: 100px 1020px 100px 156px;
+
+  outline: 2px solid tomato;
+}
+
+.botom-logo{
+  margin-bottom: 16px;
 }
 
 
 
+/* Portfolio flex */
+/* меню сортировки  */
+.sorting{
+ outline: 2px solid tomato;
+
+ margin-bottom: 72px;
+  /* margin: 96px 427px 72px 427px; */
+  justify-content: center;
+    align-items: flex-start;
+      
+      padding-inline-start: 0%;
+      display: flex;
+     
+     
+}
+
+ .sorting .item+.item {
+  margin-left: 24px;
+}
+/* Основной контент портфолио */
+/* div galery */
+/* .galery-fons{
+width: 1128px;
+} */
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid tomato;
+  padding-inline-start: 0%;
+  margin-left: 156px;
+  margin-right: 156px;
+
+}
+.galery-photo{
+width: 360px;
+outline: 2px solid tomato;
+
+
+
+}
+
+
+ /* .galery .galery-photo+ */
+ .galery-photo:nth-child(3n) {
+   margin-left: 24px;
+ } 
+    .galery-photo+ .galery-photo:nth-child(2n) {
+      margin-left: 24px;
+    } 
 
 /*#region box--*/
 /* 
