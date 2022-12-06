@@ -244,21 +244,6 @@ footer .logo {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* #region HEADER new box*/
 
 ul{
@@ -271,14 +256,16 @@ ul{
 /* New Header */
 
 .container{
-outline:2px solid tomato; 
+
 
   width: 1158px;
   padding:0 15px;
    margin: 0 auto;
    
+   
 
 }
+
 .header-container{
   display: flex;
  justify-content: space-between;
@@ -287,21 +274,21 @@ outline:2px solid tomato;
 }
 
 .header-nav{
-outline: 2px solid tomato;
+
 
   display: flex;
   align-items: center;
   
 }
 .logo {
-  outline: 2px solid tomato;
+
 
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
 .site-nav {
-outline:2px solid tomato;
+
 
   display: flex;
   margin-left: 77px;
@@ -322,7 +309,7 @@ margin-left: auto;
 }
 
 .contact .item{
-outline: 2px solid tomato;
+
 
 margin: 24px auto;
 }
@@ -337,7 +324,7 @@ margin: 24px auto;
 .section-hero{
   
 
-  outline: 2px solid tomato;
+
   
   text-align: center;
   padding: 192px 0px ;
@@ -350,22 +337,16 @@ margin: 24px auto;
   margin: 0 auto;
   margin-bottom: 48px;
 
-  outline: 2px solid tomato;
+  
   
 }
 /* First Button */
 .hero-button{
-    outline: 2px solid tomato;
+   
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
-/* div h1*/
-
-      
-
-/* Button h1 */
-.first-button{
-  outline: 2px solid tomato;
-}
 /* #region hero */
 
 
@@ -375,7 +356,7 @@ margin: 24px auto;
 .quality-box{
  
 display: flex;
-  outline: 2px solid tomato;
+  
   padding:120px 0;
   
     gap: 24px;  
@@ -388,7 +369,6 @@ display: flex;
 
  .content-box{
   display: block;
-  outline: 2px solid tomato;
   justify-content: center;
 
  }
@@ -406,14 +386,14 @@ display: flex;
 /* Панель сотрудников */
        
         .team{
-          outline: 2px solid tomato;
+         
           display: block;
           
         }
         /* заголовок сотрудников*/
       .team .secondary-title {
 
-         outline: 2px solid tomato;
+      
          display:flex;
          justify-content: center;
           padding: 100px 0px ;
@@ -422,7 +402,7 @@ display: flex;
 
         /* фотографии сотрудников*/
 .team-item{
-  outline: 2px solid tomato;
+ 
 display: flex;
   gap: 24px;
 }
@@ -431,7 +411,7 @@ display: flex;
 
 .team-text{
 
-  outline: 2px solid tomato;
+  
   padding-top: 32px;
   padding-bottom:32px;
   
@@ -439,16 +419,16 @@ display: flex;
   
 }
  .quality-title{
-  outline: 2px solid tomato;
+  
   display: flex;
  margin: 0px;
   margin-bottom: 8px;
 justify-content: center;
-/* padding-top: 32px; */
+
  }
 
-.quality-title-paragraph{
-  outline: 2px solid tomato;
+.team-item .quality-title-paragraph{
+  
   display: flex;
   margin: 0px;
   justify-content: center;
@@ -487,11 +467,10 @@ justify-content: center;
 /* Portfolio flex */
 /* меню сортировки  */
 .sorting{
- outline: 2px solid tomato;
- margin: 96px auto 72px auto;
- padding: 0px;
-  justify-content: center;
-      display: flexbox;
+
+ display: flex;
+ justify-content: center;
+ padding:96px 0px 72px;
 }
 
  .sorting .item+.item {
@@ -499,41 +478,36 @@ justify-content: center;
 }
 /* Основной контент портфолио */
 
-
-
-
- .galery-fons{
-  outline: 2px solid tomato;
-width: 1440px;
-padding-left: 15px;
-padding-right: 15px;
-justify-content: center;
-display: flex;
-margin: 0px;
-
-}
 .galery{
-outline: 2px solid green;
-width: 1148px;
-margin-bottom: 120px;
 
-  padding: 0px;
-  list-style: none;
+ padding-bottom: 120px;
   
   display: flex;
   flex-wrap: wrap;
-margin-top: calc(-1 * var(--card-set-gap));
- margin-left: calc(-1 * var(--card-set-gap)); 
-  
+  column-gap: 24px;
+  row-gap: 48px;
+  justify-content: flex-start;
 }
-/* calc(-1 * var(--card-set-gap)) */
+
+.galery-text{
+  
+  display: inline-block;
+  width: 360px;
+  padding: 32px 0px;
+} 
+.galery .quality-title-paragraph{
+  margin: 0px;
+}
+.galery .quality-list{
+  margin: 0px;
+  margin-bottom: 8px;
+}
 
   .galery > .galery-photo{
+    display: flex;
     
-  outline: 2px solid tomato;
-  width: 360px;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+  
+  
+   flex-basis: calc((100% - 2 * 24px) / 3 ); 
 }     
 
