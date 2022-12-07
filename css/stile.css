@@ -7,7 +7,7 @@ html{
 *::after{
   box-sizing: inherit;
 }
-
+/* Стилі */
 :root {
   --text: #434455; /* #434455 --text-description*/
   --dark: #2e2f42; /* #2E2F42 --block-header */
