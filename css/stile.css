@@ -16,6 +16,7 @@ html{
   --light: #f4f4fd;
   --accent: #e7e9fc;
   --card-set-gap: 20px;
+  --button-focus:#404BBF;
 }
 
 /*#region-- general settings-- */
@@ -30,6 +31,16 @@ ul {
   list-style: none;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+p{
+  margin: 0px;
+}
 /* #endregion --General settings--  */
 
 /*#region header */
@@ -110,11 +121,22 @@ font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
 }
 
-.hero-button:hover,
 .hero-button:focus {
-  color: varvar(--white-text);
+  color: var(--white-text);
+  background-color: var(--button-focus);
+}
+.hero-button:active,
+.hero-button:active {
+
+  color: var(--white-text);
   background-color: var(--primary-brand);
 }
+/* .hero-button:hover,
+.hero-button:focus {
+  
+  color: var(--white-text);
+  background-color: var(--primary-brand);
+} */
 
 /* Quality and text */
 /* Візуально прибрав заголовки */
@@ -162,6 +184,7 @@ font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    font-weight: 400;
 
 }
 .secondary-title {
@@ -288,18 +311,20 @@ ul{
 }
 
 .site-nav {
-
-
   display: flex;
   margin-left: 77px;
-    padding-top: 24px;
-      padding-bottom: 24px;
 }
 
 .site-nav .item+.item {
   margin-left: 24px;
-
 } 
+.nav-link{
+  display: flex;
+  padding-top: 24px;
+    padding-bottom: 24px;
+    
+   
+}
 /*contact*/
 .contact{
 
@@ -308,11 +333,6 @@ ul{
 margin-left: auto;  
 }
 
-.contact .item{
-
-
-margin: 24px auto;
-}
 .contact .item+ .item{
   margin-left: 40px;
 }
@@ -322,27 +342,18 @@ margin: 24px auto;
 
 /*hero --h1--*/
 .section-hero{
-  
-
-
-  
   text-align: center;
   padding: 192px 0px ;
- 
-
 }
 .section-title{
 
   width: 492px;
   margin: 0 auto;
   margin-bottom: 48px;
-
-  
-  
 }
 /* First Button */
 .hero-button{
-   
+   border: #2e2f42;
     padding: 16px 32px;
     border-radius: 4px;
 }
@@ -351,14 +362,13 @@ margin: 24px auto;
 
 
 /* section 1 */
-
+.section{
+  padding: 120px 0px;
+}
 
 .quality-box{
  
 display: flex;
-  
-  padding:120px 0;
-  
     gap: 24px;  
 
 }
@@ -373,9 +383,7 @@ display: flex;
 
  }
  .content-box .secondary-title{
-   display: flex;
-  
-   justify-content: center;
+  text-align: center;
     margin:  0px auto 72px; 
  }
  .content-item{
@@ -388,16 +396,16 @@ display: flex;
         .team{
          
           display: block;
+          padding: 120px 0px;
           
         }
         /* заголовок сотрудников*/
       .team .secondary-title {
 
-      
-         display:flex;
-         justify-content: center;
-          padding: 100px 0px ;
-         margin: 0px;
+      text-align: center;
+      margin-bottom: 120px;
+       
+       
          } 
 
         /* фотографии сотрудников*/
@@ -419,43 +427,27 @@ display: flex;
   
 }
  .quality-title{
-  
-  display: flex;
- margin: 0px;
+ 
   margin-bottom: 8px;
 justify-content: center;
 
  }
 
-.team-item .quality-title-paragraph{
-  
-  display: flex;
-  margin: 0px;
-  justify-content: center;
 
-}  
 /* #endregion*/
 
 
 
 /*  Footer */
 
-.footer-container{
-  display: block;
-  padding: 100px 156px;
- 
-  
+.bottom{
+  padding: 100px 0px;
 }
-.bottom-logo{
-  display:flex;
-  width: 264px;
-  margin: 0px;
-  
-  
-}
+
+
 .bottom-text{
-  display: inline-block;
-  margin: 16px 0px;
+  
+  margin-top: 16px;
   justify-content: flex-start;
   width: 264px;
  
@@ -470,18 +462,20 @@ justify-content: center;
 
  display: flex;
  justify-content: center;
- padding:96px 0px 72px;
-}
+margin-bottom: 72px;
 
+
+}
+.button-primary{
+border: 1px solid var(--accent);
+border-radius: 4px;
+}
  .sorting .item+.item {
   margin-left: 24px;
 }
 /* Основной контент портфолио */
 
 .galery{
-
- padding-bottom: 120px;
-  
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -491,9 +485,10 @@ justify-content: center;
 
 .galery-text{
   
-  display: inline-block;
-  width: 360px;
-  padding: 32px 0px;
+  padding: 32px 16px;
+  border-right: 1px;
+  border-left: 1px;
+  border-bottom: 1px;
 } 
 .galery .quality-title-paragraph{
   margin: 0px;
