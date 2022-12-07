@@ -121,12 +121,7 @@ font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
 }
 
-.hero-button:focus {
-  color: var(--white-text);
-  background-color: var(--button-focus);
-}
-.hero-button:active,
-.hero-button:active {
+.hero-button:active{
 
   color: var(--white-text);
   background-color: var(--primary-brand);
@@ -319,7 +314,7 @@ ul{
   margin-left: 24px;
 } 
 .nav-link{
-  display: flex;
+  display: block ;
   padding-top: 24px;
     padding-bottom: 24px;
     
@@ -335,6 +330,10 @@ margin-left: auto;
 
 .contact .item+ .item{
   margin-left: 40px;
+}
+.link-contact{
+display: block;
+  padding: 24px 0px;
 }
 /* #endregion */
 
@@ -367,10 +366,12 @@ margin-left: auto;
 }
 
 .quality-box{
- 
 display: flex;
-    gap: 24px;  
+   gap: 24px;
+}
+.quality-item{
 
+  flex-basis: calc((100% - 72px) / 4 );
 }
 
   /* section 2 */
@@ -380,6 +381,7 @@ display: flex;
  .content-box{
   display: block;
   justify-content: center;
+  padding-bottom: 120px;
 
  }
  .content-box .secondary-title{
@@ -403,7 +405,7 @@ display: flex;
       .team .secondary-title {
 
       text-align: center;
-      margin-bottom: 120px;
+      margin-bottom: 72px;
        
        
          } 
@@ -422,17 +424,15 @@ display: flex;
   
   padding-top: 32px;
   padding-bottom:32px;
-  
-
-  
 }
  .quality-title{
  
   margin-bottom: 8px;
 justify-content: center;
-
  }
-
+.quality-list{
+  text-align: center;
+}
 
 /* #endregion*/
 
@@ -486,9 +486,9 @@ border-radius: 4px;
 .galery-text{
   
   padding: 32px 16px;
-  border-right: 1px;
-  border-left: 1px;
-  border-bottom: 1px;
+  border-right: 0,5px solid var(--light);
+  border-left: 0,5px solid var(--light);
+  border-bottom: 0,5px solid var(--light);
 } 
 .galery .quality-title-paragraph{
   margin: 0px;
